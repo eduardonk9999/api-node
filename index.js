@@ -21,6 +21,12 @@ app.get('/', (req, res) => {
   return res.json(db)
 })
 
+app.post('/add', (req, res) => {
+  const body = req.body
+
+  if(!body) 
+})
+
 app.listen(21262, () => {
   console.log('Foi Familia!')
 })
